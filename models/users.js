@@ -6,4 +6,4 @@ let userschema=mongoose.Schema({
     role:String
 })
 let users=mongoose.model('users',userschema);
-module.export={users}
+module.exports={users}
