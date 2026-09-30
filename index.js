@@ -4,7 +4,7 @@ let app = express();
 let hrroutes = require("./routes/hr_route");
 let emprouter = require("./routes/emp_route");
 let mongoose=require('mongoose');
-mongoose.connect("mongodb://127.0.0.1:27017//hrmanagement")
+mongoose.connect("mongodb://localhost:27017/hrmanagement")
 .then(()=>{
     console.log("connected with mongodb database")
 }).catch((err)=>{
