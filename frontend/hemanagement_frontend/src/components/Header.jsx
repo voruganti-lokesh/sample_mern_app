@@ -1,31 +1,14 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header() {
-    return (
-        <div>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
-                <div className="container-fluid">
-                    <NavLink className="navbar-brand" to="/">Navbar</NavLink>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="/">Home</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="/about">About</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="/contact">Contact</NavLink>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    );
+  return (
+    <div className="header d-flex justify-content-center gap-3 align-items-center p-3">
+      <Link to="/" className="text-decoration-none text-dark">Home</Link>
+      <Link to="/about" className="text-decoration-none text-dark">About</Link>
+      <Link to="/contact" className="text-decoration-none text-dark">Contact</Link>
+      <Link to="/adminlogin" className="text-decoration-none text-dark">AdminLogin</Link>
+    </div>
+  );
 }
 
 export default Header;
