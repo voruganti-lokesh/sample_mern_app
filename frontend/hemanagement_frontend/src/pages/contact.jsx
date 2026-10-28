@@ -6,7 +6,6 @@ function Contact() {
   let [colname,setColname]=useState("VFSTR")
   let registerForm = (event) => {
     event.preventDefault();
-    console.log(name);
   }
 
   return (
@@ -24,10 +23,6 @@ function Contact() {
       <input type="submit" value="submit"></input>
       <br/>
     </form>
-    <p>{name}</p>
-    <p>{age}</p>
-    <p>{emailid}</p>
-    <p>{colname}</p>
     </div>
   );
 }

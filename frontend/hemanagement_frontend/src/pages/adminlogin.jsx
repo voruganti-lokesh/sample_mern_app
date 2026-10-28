@@ -13,10 +13,8 @@ function AdminLogin() {
     event.preventDefault();
 
     if (username === "admin" && password === "admin") {
-      console.log("login successful");
       navigate("/adminhome");
     } else {
-      console.log("login failed");
         setError("Invalid username or password");
     }
   };

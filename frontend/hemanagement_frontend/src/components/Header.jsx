@@ -1,14 +1,16 @@
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
+import './header.css'
 function Header() {
-  return (
-    <div className="header d-flex justify-content-center gap-3 align-items-center p-3">
-      <Link to="/" className="text-decoration-none text-dark">Home</Link>
-      <Link to="/about" className="text-decoration-none text-dark">About</Link>
-      <Link to="/contact" className="text-decoration-none text-dark">Contact</Link>
-      <Link to="/adminlogin" className="text-decoration-none text-dark">AdminLogin</Link>
-    </div>
-  );
-}
+    return (
+        <div className="header">
+            <a href="/">Home</a>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/services">Services</Link>
+            <Link to="/login">Login</Link>
+            <Link to="/register">register</Link>
 
+        </div>
+    )
+}
 export default Header;
