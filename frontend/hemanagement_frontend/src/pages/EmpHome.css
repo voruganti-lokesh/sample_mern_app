@@ -1,0 +1,164 @@
+
+.emp-dashboard {
+    min-height: 75vh;
+    padding: 45px 30px;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+.emp-welcome {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #134e4a, #0f172a);
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+}
+
+.emp-welcome h1 {
+    margin: 0 0 12px;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.emp-welcome p {
+    max-width: 650px;
+    margin: 0;
+    color: #ccfbf1;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.emp-badge {
+    flex-shrink: 0;
+    padding: 12px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.emp-dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.emp-card {
+    padding: 28px 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.emp-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+}
+
+.emp-card-icon {
+    margin-bottom: 18px;
+    font-size: 38px;
+}
+
+.emp-card h2 {
+    margin: 0 0 12px;
+    color: #1e293b;
+    font-size: 21px;
+}
+
+.emp-card p {
+    min-height: 48px;
+    margin-bottom: 22px;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.emp-card-button {
+    display: inline-block;
+    padding: 11px 16px;
+    border-radius: 8px;
+    background: #0f766e;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.emp-card-button:hover {
+    background: #115e59;
+    color: #ffffff;
+}
+
+.emp-logout-section {
+    max-width: 1100px;
+    margin: 35px auto 0;
+    text-align: right;
+}
+
+.emp-logout-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 9px;
+    background: #dc2626;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.emp-logout-button:hover {
+    background: #b91c1c;
+}
+
+@media (max-width: 850px) {
+    .emp-dashboard-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .emp-welcome h1 {
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 550px) {
+    .emp-dashboard {
+        padding: 25px 15px;
+    }
+
+    .emp-welcome {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 20px;
+    }
+
+    .emp-welcome h1 {
+        font-size: 25px;
+    }
+
+    .emp-welcome p {
+        font-size: 14px;
+    }
+
+    .emp-dashboard-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .emp-card {
+        padding: 24px 20px;
+    }
+}

@@ -1,0 +1,146 @@
+
+.hr-dashboard {
+    min-height: 75vh;
+    padding: 45px 30px;
+    background: linear-gradient(135deg, #f1f5ff, #f8fafc);
+}
+
+.hr-welcome {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    padding: 35px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #243b55, #141e30);
+    color: white;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+}
+
+.hr-welcome h1 {
+    margin: 0 0 12px;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.hr-welcome p {
+    margin: 0;
+    color: #dbeafe;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.hr-dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hr-card {
+    padding: 28px 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hr-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+}
+
+.hr-card-icon {
+    margin-bottom: 18px;
+    font-size: 38px;
+}
+
+.hr-card h2 {
+    margin: 0 0 12px;
+    color: #1e293b;
+    font-size: 21px;
+}
+
+.hr-card p {
+    min-height: 48px;
+    margin-bottom: 22px;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.hr-card-button {
+    display: inline-block;
+    padding: 11px 16px;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.hr-card-button:hover {
+    background: #3730a3;
+    color: white;
+}
+
+.hr-logout-section {
+    max-width: 1100px;
+    margin: 35px auto 0;
+    text-align: right;
+}
+
+.hr-logout-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 9px;
+    background: #dc2626;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.hr-logout-button:hover {
+    background: #b91c1c;
+}
+
+@media (max-width: 850px) {
+    .hr-dashboard-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hr-welcome h1 {
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 550px) {
+    .hr-dashboard {
+        padding: 25px 15px;
+    }
+
+    .hr-welcome {
+        padding: 25px 20px;
+    }
+
+    .hr-welcome h1 {
+        font-size: 25px;
+    }
+
+    .hr-welcome p {
+        font-size: 14px;
+    }
+
+    .hr-dashboard-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .hr-card {
+        padding: 24px 20px;
+    }
+}

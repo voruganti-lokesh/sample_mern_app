@@ -1,0 +1,45 @@
+
+/* Footer Container */
+.footer-container {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 15px;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Footer Text */
+.footer p {
+    margin: 0;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+/* Highlight Name */
+.footer span {
+    color: #00d4ff;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.footer span:hover {
+    color: #5b7cfa;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .footer {
+        padding: 16px 10px;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+}

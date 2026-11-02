@@ -1,7 +1,9 @@
 function AdminHome() {
+    let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    
     return (
         <div>
-            <h1>welcome to Admin Home</h1>
+            <h1>welcome {currentUser.name}</h1>
 
         </div>)
 }
